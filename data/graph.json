@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "p01",
+      "type": "persona",
+      "group": "trades",
+      "label": "Marcus",
+      "preview": "If I miss it they just call the next guy on Google."
+    },
+    {
+      "id": "p02",
+      "type": "persona",
+      "group": "trades",
+      "label": "Tania",
+      "preview": "My wife shouldn't have to pick up at 9pm because I'm on a panel."
+    },
+    {
+      "id": "p03",
+      "type": "persona",
+      "group": "trades",
+      "label": "Dwayne",
+      "preview": "After a hailstorm the phone explodes and I'm 30 feet up."
+    },
+    {
+      "id": "p04",
+      "type": "persona",
+      "group": "hvac",
+      "label": "Rosa",
+      "preview": "First heat wave my phone doesn't stop \u2014 and I'm up on a roof."
+    },
+    {
+      "id": "p05",
+      "type": "persona",
+      "group": "hvac",
+      "label": "Kevin",
+      "preview": "I hit the call cap by the 20th and it just... stops."
+    },
+    {
+      "id": "p06",
+      "type": "persona",
+      "group": "hvac",
+      "label": "Big-D Heating",
+      "preview": "The human service works but it's eating four grand a month."
+    },
+    {
+      "id": "p07",
+      "type": "persona",
+      "group": "law",
+      "label": "Janet",
+      "preview": "My clients are in the worst week of their life \u2014 they can't get a bot."
+    },
+    {
+      "id": "p08",
+      "type": "persona",
+      "group": "law",
+      "label": "Raj",
+      "preview": "A single signed case is worth more than a year of any tool."
+    },
+    {
+      "id": "p09",
+      "type": "persona",
+      "group": "law",
+      "label": "Harold",
+      "preview": "My clients call and Donna picks up. Why would I change that?"
+    },
+    {
+      "id": "p10",
+      "type": "persona",
+      "group": "realestate",
+      "label": "Ashley",
+      "preview": "I see four missed calls after every showing."
+    },
+    {
+      "id": "p11",
+      "type": "persona",
+      "group": "realestate",
+      "label": "Dana",
+      "preview": "My ISA goes home at six and the leads keep calling."
+    },
+    {
+      "id": "p12",
+      "type": "persona",
+      "group": "realestate",
+      "label": "Vincent",
+      "preview": "At my price point, a client reaching a bot is a dealbreaker."
+    },
+    {
+      "id": "p13",
+      "type": "persona",
+      "group": "propmgmt",
+      "label": "Priya",
+      "preview": "Half my calls are clogged toilets and I still have to catch the burst pipe."
+    },
+    {
+      "id": "p14",
+      "type": "persona",
+      "group": "propmgmt",
+      "label": "Glenn",
+      "preview": "Every prospect that hits voicemail is a vacant unit for another week."
+    },
+    {
+      "id": "p15",
+      "type": "persona",
+      "group": "propmgmt",
+      "label": "Sam",
+      "preview": "I'm not paying receptionist money for ten units."
+    },
+    {
+      "id": "p16",
+      "type": "persona",
+      "group": "finance",
+      "label": "Gerald",
+      "preview": "Nobody picks their retirement advisor because they answered fastest."
+    },
+    {
+      "id": "p17",
+      "type": "persona",
+      "group": "finance",
+      "label": "Lena",
+      "preview": "A quote shopper will bind with whoever calls back first."
+    },
+    {
+      "id": "p18",
+      "type": "persona",
+      "group": "finance",
+      "label": "Okafor & Co",
+      "preview": "In April we drown, but I can't have a bot mishandling tax info."
+    },
+    {
+      "id": "v_gen0_control",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "Never miss a call again."
+    },
+    {
+      "id": "v_gen0_priceled",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "The cheapest way to never miss a call."
+    },
+    {
+      "id": "v_gen0_lossframe",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "Every missed call is a job your competitor just won."
+    },
+    {
+      "id": "v_gen0_trades",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "The 24/7 receptionist built for the trades."
+    },
+    {
+      "id": "v_gen0_premium",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "Catch every emergency call. Flat $199, unlimited."
+    },
+    {
+      "id": "v_gen0_voicetrust",
+      "type": "variant",
+      "group": "unaligned",
+      "generation": 0,
+      "fitness": 0.0,
+      "status": "alive",
+      "label": "Sounds human. Books the job before you're off the roof."
+    }
+  ],
+  "edges": []
+}

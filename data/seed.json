@@ -1,0 +1,673 @@
+﻿{
+    "brief":  {
+                  "product":  "Upfirst",
+                  "one_liner":  "AI virtual receptionist for small businesses",
+                  "artifact":  {
+                                   "headline":  "Never miss a call again.",
+                                   "subhead":  "Upfirst picks up for you, takes messages, schedules appointments, and more.",
+                                   "bullets":  [
+                                                   "Answers 24/7",
+                                                   "Books appointments on the spot",
+                                                   "Filters spam — you don\u0027t pay for those calls"
+                                               ],
+                                   "price_model":  "per_call",
+                                   "price_point_usd":  24.95,
+                                   "price_note":  "30 calls/mo included, 14-day free trial, no credit card"
+                               },
+                  "stated_target":  "small businesses",
+                  "stated_verticals":  [
+                                           "law",
+                                           "contractors",
+                                           "hvac",
+                                           "property_management",
+                                           "real_estate",
+                                           "financial_services"
+                                       ],
+                  "optimize_for":  [
+                                       "trial_signup_intent",
+                                       "willingness_to_pay"
+                                   ]
+              },
+    "groups":  [
+                   {
+                       "id":  "trades",
+                       "label":  "Plumbing / Electrical / Roofing",
+                       "vertical":  "contractors",
+                       "market_weight":  0.22,
+                       "economics":  {
+                                         "avg_job_value_usd":  1200,
+                                         "missed_call_ev_usd":  350,
+                                         "pct_calls_unanswered":  0.62,
+                                         "typical_current_tool":  "voicemail"
+                                     },
+                       "why_cant_answer":  "hands in a drain or up on a roof; phone is in the truck",
+                       "decision_driver":  "speed",
+                       "color":  "#E4572E"
+                   },
+                   {
+                       "id":  "hvac",
+                       "label":  "HVAC",
+                       "vertical":  "hvac",
+                       "market_weight":  0.20,
+                       "economics":  {
+                                         "avg_job_value_usd":  1600,
+                                         "missed_call_ev_usd":  290,
+                                         "pct_calls_unanswered":  0.62,
+                                         "typical_current_tool":  "voicemail"
+                                     },
+                       "why_cant_answer":  "in the attic or on the unit; call volume spikes in heat waves",
+                       "decision_driver":  "speed_emergency",
+                       "color":  "#F3A712"
+                   },
+                   {
+                       "id":  "propmgmt",
+                       "label":  "Property Management",
+                       "vertical":  "property_management",
+                       "market_weight":  0.16,
+                       "economics":  {
+                                         "avg_job_value_usd":  600,
+                                         "missed_call_ev_usd":  300,
+                                         "pct_calls_unanswered":  0.55,
+                                         "typical_current_tool":  "overwhelmed_staff"
+                                     },
+                       "why_cant_answer":  "tiny staff; after-hours maintenance emergencies",
+                       "decision_driver":  "triage_and_leasing",
+                       "color":  "#669BBC"
+                   },
+                   {
+                       "id":  "law",
+                       "label":  "Law Firms",
+                       "vertical":  "law",
+                       "market_weight":  0.16,
+                       "economics":  {
+                                         "avg_job_value_usd":  6000,
+                                         "missed_call_ev_usd":  600,
+                                         "pct_calls_unanswered":  0.40,
+                                         "typical_current_tool":  "human_answering_service"
+                                     },
+                       "why_cant_answer":  "in court or with a client",
+                       "decision_driver":  "human_touch_compliance",
+                       "color":  "#3D348B"
+                   },
+                   {
+                       "id":  "realestate",
+                       "label":  "Real Estate",
+                       "vertical":  "real_estate",
+                       "market_weight":  0.14,
+                       "economics":  {
+                                         "avg_job_value_usd":  8000,
+                                         "missed_call_ev_usd":  320,
+                                         "pct_calls_unanswered":  0.40,
+                                         "typical_current_tool":  "voicemail"
+                                     },
+                       "why_cant_answer":  "showing houses or at a closing",
+                       "decision_driver":  "speed_to_lead",
+                       "color":  "#06A77D"
+                   },
+                   {
+                       "id":  "finance",
+                       "label":  "Financial Services",
+                       "vertical":  "financial_services",
+                       "market_weight":  0.12,
+                       "economics":  {
+                                         "avg_job_value_usd":  5000,
+                                         "missed_call_ev_usd":  150,
+                                         "pct_calls_unanswered":  0.30,
+                                         "typical_current_tool":  "assistant"
+                                     },
+                       "why_cant_answer":  "in meetings, but callbacks are tolerated",
+                       "decision_driver":  "compliance_relationship",
+                       "color":  "#7A6C5D"
+                   }
+               ],
+    "personas":  [
+                     {
+                         "id":  "p01",
+                         "group_id":  "trades",
+                         "name":  "Marcus",
+                         "role":  "solo plumber",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  320,
+                         "call_volume_per_week":  45,
+                         "current_tool":  "voicemail",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  200,
+                         "skepticism":  0.5,
+                         "ai_trust":  0.70,
+                         "jtbd":  "Catch the burst-pipe call while I\u0027m under a sink.",
+                         "pain_triggers":  [
+                                               "phone in the truck",
+                                               "emergency jobs at night",
+                                               "competitor answers first"
+                                           ],
+                         "voice_sample":  "If I miss it they just call the next guy on Google.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p02",
+                         "group_id":  "trades",
+                         "name":  "Tania",
+                         "role":  "co-owner, 3-truck electrical",
+                         "business_shape":  "small_crew",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  380,
+                         "call_volume_per_week":  80,
+                         "current_tool":  "spouse_answers",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  250,
+                         "skepticism":  0.6,
+                         "ai_trust":  0.65,
+                         "jtbd":  "Stop my wife being the after-hours answering service.",
+                         "pain_triggers":  [
+                                               "after-hours burnout",
+                                               "spouse answering calls",
+                                               "no dispatch coverage"
+                                           ],
+                         "voice_sample":  "My wife shouldn\u0027t have to pick up at 9pm because I\u0027m on a panel.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p03",
+                         "group_id":  "trades",
+                         "name":  "Dwayne",
+                         "role":  "roofing contractor",
+                         "business_shape":  "small_crew",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  450,
+                         "call_volume_per_week":  60,
+                         "current_tool":  "nothing",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  300,
+                         "skepticism":  0.55,
+                         "ai_trust":  0.65,
+                         "jtbd":  "Capture the storm-damage rush before the other truck shows up.",
+                         "pain_triggers":  [
+                                               "spiky storm-season volume",
+                                               "time-critical leads",
+                                               "no coverage on the roof"
+                                           ],
+                         "voice_sample":  "After a hailstorm the phone explodes and I\u0027m 30 feet up.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p04",
+                         "group_id":  "hvac",
+                         "name":  "Rosa",
+                         "role":  "solo HVAC owner",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  290,
+                         "call_volume_per_week":  50,
+                         "current_tool":  "voicemail",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  200,
+                         "skepticism":  0.5,
+                         "ai_trust":  0.70,
+                         "jtbd":  "Don\u0027t lose the \u0027no-AC\u0027 emergency during a heat wave.",
+                         "pain_triggers":  [
+                                               "heat-wave call spikes",
+                                               "on a roof during peak",
+                                               "voicemail loses jobs"
+                                           ],
+                         "voice_sample":  "First heat wave my phone doesn\u0027t stop — and I\u0027m up on a roof.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p05",
+                         "group_id":  "hvac",
+                         "name":  "Kevin",
+                         "role":  "owner, 8-tech HVAC shop",
+                         "business_shape":  "multi_location",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  290,
+                         "call_volume_per_week":  250,
+                         "current_tool":  "cheap_ai_caps_out",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  300,
+                         "skepticism":  0.65,
+                         "ai_trust":  0.75,
+                         "jtbd":  "Stop outgrowing the $25 tool every single busy month.",
+                         "pain_triggers":  [
+                                               "call cap hit mid-month",
+                                               "tool stops answering",
+                                               "burned by cheap option"
+                                           ],
+                         "voice_sample":  "I hit the call cap by the 20th and it just... stops.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p06",
+                         "group_id":  "hvac",
+                         "name":  "Big-D Heating",
+                         "role":  "owner, 2 locations",
+                         "business_shape":  "multi_location",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  300,
+                         "call_volume_per_week":  180,
+                         "current_tool":  "weighing_human_service",
+                         "price_frame":  "price_vs_reliability",
+                         "price_ceiling_usd_per_mo":  400,
+                         "skepticism":  0.6,
+                         "ai_trust":  0.60,
+                         "jtbd":  "Match the human answering service\u0027s coverage at a tenth of the cost.",
+                         "pain_triggers":  [
+                                               "$3-4k/mo human service",
+                                               "two-location coverage",
+                                               "after-hours gaps"
+                                           ],
+                         "voice_sample":  "The human service works but it\u0027s eating four grand a month.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p07",
+                         "group_id":  "law",
+                         "name":  "Janet",
+                         "role":  "solo family-law attorney",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  600,
+                         "call_volume_per_week":  30,
+                         "current_tool":  "human_legal_service",
+                         "price_frame":  "human_touch",
+                         "price_ceiling_usd_per_mo":  500,
+                         "skepticism":  0.8,
+                         "ai_trust":  0.30,
+                         "jtbd":  "Never let a scared parent in a custody fight hit a robot.",
+                         "pain_triggers":  [
+                                               "clients in crisis",
+                                               "emotional intake",
+                                               "bot feels cold"
+                                           ],
+                         "voice_sample":  "My clients are in the worst week of their life — they can\u0027t get a bot.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p08",
+                         "group_id":  "law",
+                         "name":  "Raj",
+                         "role":  "partner, 2-attorney PI firm",
+                         "business_shape":  "small_crew",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  1100,
+                         "call_volume_per_week":  40,
+                         "current_tool":  "paralegal_plus_service",
+                         "price_frame":  "compliance",
+                         "price_ceiling_usd_per_mo":  600,
+                         "skepticism":  0.75,
+                         "ai_trust":  0.45,
+                         "jtbd":  "Catch the injury call first without sounding like a call center.",
+                         "pain_triggers":  [
+                                               "first-to-respond wins the case",
+                                               "compliance on intake",
+                                               "high case value"
+                                           ],
+                         "voice_sample":  "A single signed case is worth more than a year of any tool.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p09",
+                         "group_id":  "law",
+                         "name":  "Harold",
+                         "role":  "older solo attorney",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  500,
+                         "call_volume_per_week":  20,
+                         "current_tool":  "secretary",
+                         "price_frame":  "human_touch",
+                         "price_ceiling_usd_per_mo":  300,
+                         "skepticism":  0.85,
+                         "ai_trust":  0.25,
+                         "jtbd":  "Keep doing what has always worked.",
+                         "pain_triggers":  [
+                                               "tech-averse",
+                                               "trusts his secretary",
+                                               "skeptical of AI"
+                                           ],
+                         "voice_sample":  "My clients call and Donna picks up. Why would I change that?",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p10",
+                         "group_id":  "realestate",
+                         "name":  "Ashley",
+                         "role":  "solo agent",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  250,
+                         "call_volume_per_week":  40,
+                         "current_tool":  "voicemail",
+                         "price_frame":  "price_vs_reliability",
+                         "price_ceiling_usd_per_mo":  150,
+                         "skepticism":  0.55,
+                         "ai_trust":  0.60,
+                         "jtbd":  "Catch the buyer calling about the yard sign while I\u0027m at a showing.",
+                         "pain_triggers":  [
+                                               "showing houses all day",
+                                               "4 missed calls after each showing",
+                                               "leads call next agent"
+                                           ],
+                         "voice_sample":  "I see four missed calls after every showing.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p11",
+                         "group_id":  "realestate",
+                         "name":  "Dana",
+                         "role":  "5-agent team lead",
+                         "business_shape":  "small_crew",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  400,
+                         "call_volume_per_week":  120,
+                         "current_tool":  "isa_4k_month",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  300,
+                         "skepticism":  0.6,
+                         "ai_trust":  0.65,
+                         "jtbd":  "Replace the ISA\u0027s after-6pm coverage gap.",
+                         "pain_triggers":  [
+                                               "$4k/mo ISA",
+                                               "no after-hours coverage",
+                                               "leads slip overnight"
+                                           ],
+                         "voice_sample":  "My ISA goes home at six and the leads keep calling.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p12",
+                         "group_id":  "realestate",
+                         "name":  "Vincent",
+                         "role":  "luxury agent",
+                         "business_shape":  "solo",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  600,
+                         "call_volume_per_week":  25,
+                         "current_tool":  "personal_cell",
+                         "price_frame":  "relationship",
+                         "price_ceiling_usd_per_mo":  200,
+                         "skepticism":  0.7,
+                         "ai_trust":  0.35,
+                         "jtbd":  "My clients expect to reach me personally, not a system.",
+                         "pain_triggers":  [
+                                               "high-touch clientele",
+                                               "personal brand",
+                                               "AI feels off-brand"
+                                           ],
+                         "voice_sample":  "At my price point, a client reaching a bot is a dealbreaker.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p13",
+                         "group_id":  "propmgmt",
+                         "name":  "Priya",
+                         "role":  "manager, ~200 units",
+                         "business_shape":  "small_crew",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  300,
+                         "call_volume_per_week":  150,
+                         "current_tool":  "overwhelmed_staff",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  250,
+                         "skepticism":  0.55,
+                         "ai_trust":  0.70,
+                         "jtbd":  "Triage the 2am \u0027my unit is flooding\u0027 without waking me.",
+                         "pain_triggers":  [
+                                               "after-hours emergencies",
+                                               "high volume of low-value calls",
+                                               "burnout"
+                                           ],
+                         "voice_sample":  "Half my calls are clogged toilets and I still have to catch the burst pipe.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p14",
+                         "group_id":  "propmgmt",
+                         "name":  "Glenn",
+                         "role":  "leasing-focused PM company",
+                         "business_shape":  "multi_location",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  350,
+                         "call_volume_per_week":  200,
+                         "current_tool":  "voicemail",
+                         "price_frame":  "reliability",
+                         "price_ceiling_usd_per_mo":  300,
+                         "skepticism":  0.6,
+                         "ai_trust":  0.65,
+                         "jtbd":  "Stop losing prospective tenants to voicemail.",
+                         "pain_triggers":  [
+                                               "leasing inquiries missed",
+                                               "vacancy costs",
+                                               "weekend tours"
+                                           ],
+                         "voice_sample":  "Every prospect that hits voicemail is a vacant unit for another week.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p15",
+                         "group_id":  "propmgmt",
+                         "name":  "Sam",
+                         "role":  "10-unit landlord",
+                         "business_shape":  "solo",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  120,
+                         "call_volume_per_week":  25,
+                         "current_tool":  "nothing",
+                         "price_frame":  "price",
+                         "price_ceiling_usd_per_mo":  50,
+                         "skepticism":  0.5,
+                         "ai_trust":  0.60,
+                         "jtbd":  "Cheapest possible way to stop missing tenant calls.",
+                         "pain_triggers":  [
+                                               "tiny budget",
+                                               "part-time landlord",
+                                               "low call value"
+                                           ],
+                         "voice_sample":  "I\u0027m not paying receptionist money for ten units.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p16",
+                         "group_id":  "finance",
+                         "name":  "Gerald",
+                         "role":  "solo financial advisor",
+                         "business_shape":  "solo",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  100,
+                         "call_volume_per_week":  20,
+                         "current_tool":  "assistant",
+                         "price_frame":  "relationship",
+                         "price_ceiling_usd_per_mo":  100,
+                         "skepticism":  0.7,
+                         "ai_trust":  0.30,
+                         "jtbd":  "My established clients book reviews months out; I don\u0027t lose them to a missed call.",
+                         "pain_triggers":  [
+                                               "low urgency",
+                                               "relationship-driven",
+                                               "compliance on calls"
+                                           ],
+                         "voice_sample":  "Nobody picks their retirement advisor because they answered fastest.",
+                         "weight":  0.34
+                     },
+                     {
+                         "id":  "p17",
+                         "group_id":  "finance",
+                         "name":  "Lena",
+                         "role":  "insurance agent",
+                         "business_shape":  "solo",
+                         "can_answer":  true,
+                         "cost_per_missed_call_usd":  180,
+                         "call_volume_per_week":  35,
+                         "current_tool":  "voicemail",
+                         "price_frame":  "compliance",
+                         "price_ceiling_usd_per_mo":  120,
+                         "skepticism":  0.6,
+                         "ai_trust":  0.45,
+                         "jtbd":  "Catch the new-quote shopper before they bind elsewhere.",
+                         "pain_triggers":  [
+                                               "quote shoppers move fast",
+                                               "compliance disclosures",
+                                               "after-hours quotes"
+                                           ],
+                         "voice_sample":  "A quote shopper will bind with whoever calls back first.",
+                         "weight":  0.33
+                     },
+                     {
+                         "id":  "p18",
+                         "group_id":  "finance",
+                         "name":  "Okafor \u0026 Co",
+                         "role":  "small CPA firm",
+                         "business_shape":  "small_crew",
+                         "can_answer":  false,
+                         "cost_per_missed_call_usd":  200,
+                         "call_volume_per_week":  60,
+                         "current_tool":  "human_service",
+                         "price_frame":  "compliance",
+                         "price_ceiling_usd_per_mo":  150,
+                         "skepticism":  0.65,
+                         "ai_trust":  0.40,
+                         "jtbd":  "Survive the April rush without a bot fumbling sensitive client data.",
+                         "pain_triggers":  [
+                                               "seasonal tax spikes",
+                                               "sensitive financial data",
+                                               "compliance risk"
+                                           ],
+                         "voice_sample":  "In April we drown, but I can\u0027t have a bot mishandling tax info.",
+                         "weight":  0.33
+                     }
+                 ],
+    "gene_schema":  {
+                        "headline":  "text (\u003c=12 words)",
+                        "subhead":  "text",
+                        "bullets":  "list[text]",
+                        "price_model":  [
+                                            "flat",
+                                            "per_call",
+                                            "per_minute"
+                                        ],
+                        "price_point_usd":  "number",
+                        "vertical_focus":  [
+                                               "all",
+                                               "trades",
+                                               "hvac",
+                                               "law",
+                                               "real_estate",
+                                               "property_management",
+                                               "financial"
+                                           ],
+                        "frame":  [
+                                      "gain",
+                                      "loss"
+                                  ],
+                        "proof":  [
+                                      "none",
+                                      "testimonial",
+                                      "stat"
+                                  ]
+                    },
+    "founding_variants":  [
+                              {
+                                  "id":  "v_gen0_control",
+                                  "is_control":  true,
+                                  "genes":  {
+                                                "headline":  "Never miss a call again.",
+                                                "subhead":  "Upfirst picks up for you, takes messages, schedules appointments, and more.",
+                                                "bullets":  [
+                                                                "Answers 24/7",
+                                                                "Books appointments",
+                                                                "Filters spam free"
+                                                            ],
+                                                "price_model":  "per_call",
+                                                "price_point_usd":  24.95,
+                                                "vertical_focus":  "all",
+                                                "frame":  "gain",
+                                                "proof":  "none"
+                                            }
+                              },
+                              {
+                                  "id":  "v_gen0_priceled",
+                                  "genes":  {
+                                                "headline":  "The cheapest way to never miss a call.",
+                                                "subhead":  "AI answering from $19/mo. No contracts.",
+                                                "bullets":  [
+                                                                "From $19/mo",
+                                                                "Free spam filtering",
+                                                                "Cancel anytime"
+                                                            ],
+                                                "price_model":  "per_call",
+                                                "price_point_usd":  19.0,
+                                                "vertical_focus":  "all",
+                                                "frame":  "gain",
+                                                "proof":  "none"
+                                            }
+                              },
+                              {
+                                  "id":  "v_gen0_lossframe",
+                                  "genes":  {
+                                                "headline":  "Every missed call is a job your competitor just won.",
+                                                "subhead":  "We answer the moment you can\u0027t, so the lead never moves on.",
+                                                "bullets":  [
+                                                                "85% of callers never call back",
+                                                                "Answered in one ring",
+                                                                "You keep the job"
+                                                            ],
+                                                "price_model":  "per_call",
+                                                "price_point_usd":  24.95,
+                                                "vertical_focus":  "all",
+                                                "frame":  "loss",
+                                                "proof":  "stat"
+                                            }
+                              },
+                              {
+                                  "id":  "v_gen0_trades",
+                                  "genes":  {
+                                                "headline":  "The 24/7 receptionist built for the trades.",
+                                                "subhead":  "For plumbers, electricians, and HVAC who can\u0027t stop to answer.",
+                                                "bullets":  [
+                                                                "Catches emergency calls",
+                                                                "Books the job while you work",
+                                                                "Made for the field"
+                                                            ],
+                                                "price_model":  "flat",
+                                                "price_point_usd":  149.0,
+                                                "vertical_focus":  "trades",
+                                                "frame":  "gain",
+                                                "proof":  "testimonial"
+                                            }
+                              },
+                              {
+                                  "id":  "v_gen0_premium",
+                                  "genes":  {
+                                                "headline":  "Catch every emergency call. Flat $199, unlimited.",
+                                                "subhead":  "No call caps. No lost jobs. Built for high-volume service businesses.",
+                                                "bullets":  [
+                                                                "Unlimited calls",
+                                                                "Emergency keyword routing",
+                                                                "Never hit a cap"
+                                                            ],
+                                                "price_model":  "flat",
+                                                "price_point_usd":  199.0,
+                                                "vertical_focus":  "trades",
+                                                "frame":  "loss",
+                                                "proof":  "testimonial"
+                                            }
+                              },
+                              {
+                                  "id":  "v_gen0_voicetrust",
+                                  "genes":  {
+                                                "headline":  "Sounds human. Books the job before you\u0027re off the roof.",
+                                                "subhead":  "A receptionist so natural your callers won\u0027t know it\u0027s AI.",
+                                                "bullets":  [
+                                                                "Natural voice",
+                                                                "Instant booking",
+                                                                "Sounds like your best front-desk hire"
+                                                            ],
+                                                "price_model":  "flat",
+                                                "price_point_usd":  129.0,
+                                                "vertical_focus":  "all",
+                                                "frame":  "gain",
+                                                "proof":  "testimonial"
+                                            }
+                              }
+                          ]
+}

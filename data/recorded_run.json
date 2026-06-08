@@ -1,0 +1,3083 @@
+[
+  {
+    "event": "STATE_SNAPSHOT",
+    "data": {
+      "snapshot": {
+        "run_id": "r1",
+        "phase": "curating",
+        "generation": 0,
+        "islands": {},
+        "nodes": {},
+        "edges": [],
+        "hud": {
+          "calls_made": 0,
+          "cache_hits": 0,
+          "skeptic_ratio": 0.0,
+          "wedge": null
+        },
+        "narration": "Scanning research-grounded Upfirst audience seed...",
+        "orchestration_events": [
+          {
+            "actor": "Conductor",
+            "action": "Load deterministic seed path so the demo remains replay-safe."
+          }
+        ],
+        "report": null,
+        "active_tools": [
+          "CopilotKit",
+          "Redis"
+        ]
+      }
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/hud/skeptic_ratio",
+          "value": 0.67
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Audience islands prepared."
+        },
+        {
+          "op": "add",
+          "path": "/islands/hvac",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "HVAC",
+            "color": "#F3A712"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/islands/propmgmt",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "Property Management",
+            "color": "#669BBC"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/islands/realestate",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "Real Estate",
+            "color": "#06A77D"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/islands/law",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "Law Firms",
+            "color": "#3D348B"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/islands/trades",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "Plumbing / Electrical / Roofing",
+            "color": "#E4572E"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/islands/finance",
+          "value": {
+            "value": 0.0,
+            "readiness": 0.0,
+            "intent_best": 0.0,
+            "status": "active",
+            "label": "Financial Services",
+            "color": "#7A6C5D"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Marcus: If I miss it they just call the next guy on Google."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p01",
+          "value": {
+            "id": "p01",
+            "type": "persona",
+            "group": "trades",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Marcus",
+            "preview": "If I miss it they just call the next guy on Google.",
+            "parents": [],
+            "genes": {},
+            "color": "#E4572E",
+            "role": "solo plumber",
+            "jtbd": "Catch the burst-pipe call while I'm under a sink."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Tania: My wife shouldn't have to pick up at 9pm because I'm on a panel."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p02",
+          "value": {
+            "id": "p02",
+            "type": "persona",
+            "group": "trades",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Tania",
+            "preview": "My wife shouldn't have to pick up at 9pm because I'm on a panel.",
+            "parents": [],
+            "genes": {},
+            "color": "#E4572E",
+            "role": "co-owner, 3-truck electrical",
+            "jtbd": "Stop my wife being the after-hours answering service."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Dwayne: After a hailstorm the phone explodes and I'm 30 feet up."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p03",
+          "value": {
+            "id": "p03",
+            "type": "persona",
+            "group": "trades",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Dwayne",
+            "preview": "After a hailstorm the phone explodes and I'm 30 feet up.",
+            "parents": [],
+            "genes": {},
+            "color": "#E4572E",
+            "role": "roofing contractor",
+            "jtbd": "Capture the storm-damage rush before the other truck shows up."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Rosa: First heat wave my phone doesn't stop \u2014 and I'm up on a roof."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p04",
+          "value": {
+            "id": "p04",
+            "type": "persona",
+            "group": "hvac",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Rosa",
+            "preview": "First heat wave my phone doesn't stop \u2014 and I'm up on a roof.",
+            "parents": [],
+            "genes": {},
+            "color": "#F3A712",
+            "role": "solo HVAC owner",
+            "jtbd": "Don't lose the 'no-AC' emergency during a heat wave."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Kevin: I hit the call cap by the 20th and it just... stops."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p05",
+          "value": {
+            "id": "p05",
+            "type": "persona",
+            "group": "hvac",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Kevin",
+            "preview": "I hit the call cap by the 20th and it just... stops.",
+            "parents": [],
+            "genes": {},
+            "color": "#F3A712",
+            "role": "owner, 8-tech HVAC shop",
+            "jtbd": "Stop outgrowing the $25 tool every single busy month."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Big-D Heating: The human service works but it's eating four grand a month."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p06",
+          "value": {
+            "id": "p06",
+            "type": "persona",
+            "group": "hvac",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Big-D Heating",
+            "preview": "The human service works but it's eating four grand a month.",
+            "parents": [],
+            "genes": {},
+            "color": "#F3A712",
+            "role": "owner, 2 locations",
+            "jtbd": "Match the human answering service's coverage at a tenth of the cost."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Janet: My clients are in the worst week of their life \u2014 they can't get a bot."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p07",
+          "value": {
+            "id": "p07",
+            "type": "persona",
+            "group": "law",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Janet",
+            "preview": "My clients are in the worst week of their life \u2014 they can't get a bot.",
+            "parents": [],
+            "genes": {},
+            "color": "#3D348B",
+            "role": "solo family-law attorney",
+            "jtbd": "Never let a scared parent in a custody fight hit a robot."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Raj: A single signed case is worth more than a year of any tool."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p08",
+          "value": {
+            "id": "p08",
+            "type": "persona",
+            "group": "law",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Raj",
+            "preview": "A single signed case is worth more than a year of any tool.",
+            "parents": [],
+            "genes": {},
+            "color": "#3D348B",
+            "role": "partner, 2-attorney PI firm",
+            "jtbd": "Catch the injury call first without sounding like a call center."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Harold: My clients call and Donna picks up. Why would I change that?"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p09",
+          "value": {
+            "id": "p09",
+            "type": "persona",
+            "group": "law",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Harold",
+            "preview": "My clients call and Donna picks up. Why would I change that?",
+            "parents": [],
+            "genes": {},
+            "color": "#3D348B",
+            "role": "older solo attorney",
+            "jtbd": "Keep doing what has always worked."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Ashley: I see four missed calls after every showing."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p10",
+          "value": {
+            "id": "p10",
+            "type": "persona",
+            "group": "realestate",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Ashley",
+            "preview": "I see four missed calls after every showing.",
+            "parents": [],
+            "genes": {},
+            "color": "#06A77D",
+            "role": "solo agent",
+            "jtbd": "Catch the buyer calling about the yard sign while I'm at a showing."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Dana: My ISA goes home at six and the leads keep calling."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p11",
+          "value": {
+            "id": "p11",
+            "type": "persona",
+            "group": "realestate",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Dana",
+            "preview": "My ISA goes home at six and the leads keep calling.",
+            "parents": [],
+            "genes": {},
+            "color": "#06A77D",
+            "role": "5-agent team lead",
+            "jtbd": "Replace the ISA's after-6pm coverage gap."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Vincent: At my price point, a client reaching a bot is a dealbreaker."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p12",
+          "value": {
+            "id": "p12",
+            "type": "persona",
+            "group": "realestate",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Vincent",
+            "preview": "At my price point, a client reaching a bot is a dealbreaker.",
+            "parents": [],
+            "genes": {},
+            "color": "#06A77D",
+            "role": "luxury agent",
+            "jtbd": "My clients expect to reach me personally, not a system."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Priya: Half my calls are clogged toilets and I still have to catch the burst pipe."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p13",
+          "value": {
+            "id": "p13",
+            "type": "persona",
+            "group": "propmgmt",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Priya",
+            "preview": "Half my calls are clogged toilets and I still have to catch the burst pipe.",
+            "parents": [],
+            "genes": {},
+            "color": "#669BBC",
+            "role": "manager, ~200 units",
+            "jtbd": "Triage the 2am 'my unit is flooding' without waking me."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Glenn: Every prospect that hits voicemail is a vacant unit for another week."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p14",
+          "value": {
+            "id": "p14",
+            "type": "persona",
+            "group": "propmgmt",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Glenn",
+            "preview": "Every prospect that hits voicemail is a vacant unit for another week.",
+            "parents": [],
+            "genes": {},
+            "color": "#669BBC",
+            "role": "leasing-focused PM company",
+            "jtbd": "Stop losing prospective tenants to voicemail."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Sam: I'm not paying receptionist money for ten units."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p15",
+          "value": {
+            "id": "p15",
+            "type": "persona",
+            "group": "propmgmt",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Sam",
+            "preview": "I'm not paying receptionist money for ten units.",
+            "parents": [],
+            "genes": {},
+            "color": "#669BBC",
+            "role": "10-unit landlord",
+            "jtbd": "Cheapest possible way to stop missing tenant calls."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Gerald: Nobody picks their retirement advisor because they answered fastest."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p16",
+          "value": {
+            "id": "p16",
+            "type": "persona",
+            "group": "finance",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Gerald",
+            "preview": "Nobody picks their retirement advisor because they answered fastest.",
+            "parents": [],
+            "genes": {},
+            "color": "#7A6C5D",
+            "role": "solo financial advisor",
+            "jtbd": "My established clients book reviews months out; I don't lose them to a missed call."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Lena: A quote shopper will bind with whoever calls back first."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p17",
+          "value": {
+            "id": "p17",
+            "type": "persona",
+            "group": "finance",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Lena",
+            "preview": "A quote shopper will bind with whoever calls back first.",
+            "parents": [],
+            "genes": {},
+            "color": "#7A6C5D",
+            "role": "insurance agent",
+            "jtbd": "Catch the new-quote shopper before they bind elsewhere."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Extracted Okafor & Co: In April we drown, but I can't have a bot mishandling tax info."
+        },
+        {
+          "op": "add",
+          "path": "/nodes/p18",
+          "value": {
+            "id": "p18",
+            "type": "persona",
+            "group": "finance",
+            "generation": null,
+            "fitness": null,
+            "status": "alive",
+            "label": "Okafor & Co",
+            "preview": "In April we drown, but I can't have a bot mishandling tax info.",
+            "parents": [],
+            "genes": {},
+            "color": "#7A6C5D",
+            "role": "small CPA firm",
+            "jtbd": "Survive the April rush without a bot fumbling sensitive client data."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Seeding six positioning variants against the audience."
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "reacting"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_priceled",
+          "value": {
+            "id": "v_gen0_priceled",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "The cheapest way to never miss a call.",
+            "preview": "AI answering from $19/mo. No contracts.",
+            "parents": [],
+            "genes": {
+              "headline": "The cheapest way to never miss a call.",
+              "subhead": "AI answering from $19/mo. No contracts.",
+              "bullets": [
+                "From $19/mo",
+                "Free spam filtering",
+                "Cancel anytime"
+              ],
+              "price_model": "per_call",
+              "price_point_usd": 19.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "none"
+            },
+            "is_control": false,
+            "niche": null,
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_voicetrust",
+          "value": {
+            "id": "v_gen0_voicetrust",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A receptionist so natural your callers won't know it's AI.",
+            "parents": [],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A receptionist so natural your callers won't know it's AI.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": null,
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_control",
+          "value": {
+            "id": "v_gen0_control",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Never miss a call again.",
+            "preview": "Upfirst picks up for you, takes messages, schedules appointments, and more.",
+            "parents": [],
+            "genes": {
+              "headline": "Never miss a call again.",
+              "subhead": "Upfirst picks up for you, takes messages, schedules appointments, and more.",
+              "bullets": [
+                "Answers 24/7",
+                "Books appointments",
+                "Filters spam free"
+              ],
+              "price_model": "per_call",
+              "price_point_usd": 24.95,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "none"
+            },
+            "is_control": true,
+            "niche": null,
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_premium",
+          "value": {
+            "id": "v_gen0_premium",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Catch every emergency call. Flat $199, unlimited.",
+            "preview": "No call caps. No lost jobs. Built for high-volume service businesses.",
+            "parents": [],
+            "genes": {
+              "headline": "Catch every emergency call. Flat $199, unlimited.",
+              "subhead": "No call caps. No lost jobs. Built for high-volume service businesses.",
+              "bullets": [
+                "Unlimited calls",
+                "Emergency keyword routing",
+                "Never hit a cap"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 199.0,
+              "vertical_focus": "trades",
+              "frame": "loss",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": null,
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_trades",
+          "value": {
+            "id": "v_gen0_trades",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "The 24/7 receptionist built for the trades.",
+            "preview": "For plumbers, electricians, and HVAC who can't stop to answer.",
+            "parents": [],
+            "genes": {
+              "headline": "The 24/7 receptionist built for the trades.",
+              "subhead": "For plumbers, electricians, and HVAC who can't stop to answer.",
+              "bullets": [
+                "Catches emergency calls",
+                "Books the job while you work",
+                "Made for the field"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 149.0,
+              "vertical_focus": "trades",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": null,
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_lossframe",
+          "value": {
+            "id": "v_gen0_lossframe",
+            "type": "variant",
+            "group": "unaligned",
+            "generation": 0,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Every missed call is a job your competitor just won.",
+            "preview": "We answer the moment you can't, so the lead never moves on.",
+            "parents": [],
+            "genes": {
+              "headline": "Every missed call is a job your competitor just won.",
+              "subhead": "We answer the moment you can't, so the lead never moves on.",
+              "bullets": [
+                "85% of callers never call back",
+                "Answered in one ring",
+                "You keep the job"
+              ],
+              "price_model": "per_call",
+              "price_point_usd": 24.95,
+              "vertical_focus": "all",
+              "frame": "loss",
+              "proof": "stat"
+            },
+            "is_control": false,
+            "niche": null,
+            "fitness_detail": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/hud/calls_made",
+          "value": 108
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Lift-off: variants rise to their segment-level signup intent."
+        },
+        {
+          "op": "remove",
+          "path": "/islands/hvac/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/hvac/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/hvac/intent_best",
+          "value": 0.6751
+        },
+        {
+          "op": "replace",
+          "path": "/islands/hvac/value",
+          "value": 0.7897
+        },
+        {
+          "op": "replace",
+          "path": "/islands/hvac/readiness",
+          "value": 0.7442
+        },
+        {
+          "op": "remove",
+          "path": "/islands/propmgmt/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/propmgmt/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/propmgmt/intent_best",
+          "value": 0.4894
+        },
+        {
+          "op": "replace",
+          "path": "/islands/propmgmt/value",
+          "value": 0.7801
+        },
+        {
+          "op": "replace",
+          "path": "/islands/propmgmt/readiness",
+          "value": 0.709
+        },
+        {
+          "op": "remove",
+          "path": "/islands/law/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/law/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/law/intent_best",
+          "value": 0.182
+        },
+        {
+          "op": "replace",
+          "path": "/islands/law/value",
+          "value": 0.9138
+        },
+        {
+          "op": "replace",
+          "path": "/islands/law/readiness",
+          "value": 0.1816
+        },
+        {
+          "op": "remove",
+          "path": "/islands/trades/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/trades/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/trades/intent_best",
+          "value": 0.6728
+        },
+        {
+          "op": "replace",
+          "path": "/islands/trades/value",
+          "value": 0.8534
+        },
+        {
+          "op": "replace",
+          "path": "/islands/trades/readiness",
+          "value": 0.7305
+        },
+        {
+          "op": "remove",
+          "path": "/islands/realestate/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/realestate/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/realestate/intent_best",
+          "value": 0.4677
+        },
+        {
+          "op": "replace",
+          "path": "/islands/realestate/value",
+          "value": 0.7954
+        },
+        {
+          "op": "replace",
+          "path": "/islands/realestate/readiness",
+          "value": 0.5495
+        },
+        {
+          "op": "remove",
+          "path": "/islands/finance/color"
+        },
+        {
+          "op": "remove",
+          "path": "/islands/finance/label"
+        },
+        {
+          "op": "replace",
+          "path": "/islands/finance/intent_best",
+          "value": 0.1668
+        },
+        {
+          "op": "replace",
+          "path": "/islands/finance/value",
+          "value": 0.6939
+        },
+        {
+          "op": "replace",
+          "path": "/islands/finance/readiness",
+          "value": 0.2589
+        },
+        {
+          "op": "replace",
+          "path": "/active_tools/0",
+          "value": "Weave"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_control/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_control/fitness",
+          "value": 0.0145
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_control/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_control/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_control/fitness_detail",
+          "value": {
+            "overall_intent": 0.0145,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0246,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 3.12
+              },
+              "hvac": {
+                "intent": 0.0232,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 2.93
+              },
+              "propmgmt": {
+                "intent": 0.0148,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 2.43
+              },
+              "law": {
+                "intent": 0.0115,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 3.79
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0131,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 1.08
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_trades/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_trades/fitness",
+          "value": 0.3579
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_trades/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_trades/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_trades/fitness_detail",
+          "value": {
+            "overall_intent": 0.3579,
+            "by_segment": {
+              "trades": {
+                "intent": 0.6009,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 127.97
+              },
+              "hvac": {
+                "intent": 0.5605,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 142.61
+              },
+              "propmgmt": {
+                "intent": 0.3762,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 84.92
+              },
+              "law": {
+                "intent": 0.1586,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 72.08
+              },
+              "realestate": {
+                "intent": 0.3528,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 70.18
+              },
+              "finance": {
+                "intent": 0.0986,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 11.22
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_priceled/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_priceled/fitness",
+          "value": 0.0122
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_priceled/niche",
+          "value": "propmgmt"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_priceled/group",
+          "value": "propmgmt"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_priceled/fitness_detail",
+          "value": {
+            "overall_intent": 0.0122,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0019,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 0.21
+              },
+              "propmgmt": {
+                "intent": 0.0307,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 2.58
+              },
+              "law": {
+                "intent": 0.0135,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 2.78
+              },
+              "realestate": {
+                "intent": 0.0158,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 1.74
+              },
+              "finance": {
+                "intent": 0.0113,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 0.62
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_voicetrust/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_voicetrust/fitness",
+          "value": 0.4393
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_voicetrust/niche",
+          "value": "hvac"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_voicetrust/group",
+          "value": "hvac"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_voicetrust/fitness_detail",
+          "value": {
+            "overall_intent": 0.4393,
+            "by_segment": {
+              "trades": {
+                "intent": 0.6728,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 141.5
+              },
+              "hvac": {
+                "intent": 0.6751,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 167.7
+              },
+              "propmgmt": {
+                "intent": 0.4894,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 107.42
+              },
+              "law": {
+                "intent": 0.1641,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 71.44
+              },
+              "realestate": {
+                "intent": 0.4677,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 89.06
+              },
+              "finance": {
+                "intent": 0.1668,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 17.62
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_premium/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_premium/fitness",
+          "value": 0.3377
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_premium/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_premium/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_premium/fitness_detail",
+          "value": {
+            "overall_intent": 0.3377,
+            "by_segment": {
+              "trades": {
+                "intent": 0.6034,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 129.5
+              },
+              "hvac": {
+                "intent": 0.5334,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 135.21
+              },
+              "propmgmt": {
+                "intent": 0.3298,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 76.26
+              },
+              "law": {
+                "intent": 0.182,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 80.4
+              },
+              "realestate": {
+                "intent": 0.3422,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 67.99
+              },
+              "finance": {
+                "intent": 0.0357,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 4.35
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen0_lossframe/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_lossframe/fitness",
+          "value": 0.0088
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_lossframe/niche",
+          "value": "finance"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_lossframe/group",
+          "value": "finance"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_lossframe/fitness_detail",
+          "value": {
+            "overall_intent": 0.0088,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0028,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 0.31
+              },
+              "propmgmt": {
+                "intent": 0.0054,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 0.26
+              },
+              "law": {
+                "intent": 0.0076,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 2.52
+              },
+              "realestate": {
+                "intent": 0.0167,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 2.45
+              },
+              "finance": {
+                "intent": 0.0204,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 1.34
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/1",
+          "value": {
+            "actor": "Facilitator",
+            "action": "Cluster independent reactions into cap, trust, and vertical-fit objections."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Facilitator: Kevin flags the cap-out risk; skeptics cluster around price, trust, and vertical fit."
+        },
+        {
+          "op": "add",
+          "path": "/active_tools/0",
+          "value": "OpenAI"
+        },
+        {
+          "op": "add",
+          "path": "/edges/0",
+          "value": {
+            "source": "hvac",
+            "target": "v_gen0_voicetrust",
+            "kind": "objection",
+            "label": "caps_too_low",
+            "ttl_ms": 2800
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "deliberating"
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/2",
+          "value": {
+            "actor": "Conductor",
+            "action": "Hand off to Designer for generation 1 after hvac leads."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Conductor: doubling down on hvac; spawning directed mutations from objections."
+        },
+        {
+          "op": "replace",
+          "path": "/generation",
+          "value": 1
+        },
+        {
+          "op": "add",
+          "path": "/edges/1",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen1_hvac_unclear_value_0",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/2",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen1_hvac_dont_trust_ai_1",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/3",
+          "value": {
+            "source": "v_gen0_trades",
+            "target": "v_gen1_trades_not_for_my_business_2",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/4",
+          "value": {
+            "source": "v_gen0_trades",
+            "target": "v_gen1_trades_dont_trust_ai_3",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "evolving"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0",
+          "value": {
+            "id": "v_gen1_hvac_unclear_value_0",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 1,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A receptionist so natural your callers won't know it's AI.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A receptionist so natural your callers won't know it's AI.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_trades_dont_trust_ai_3",
+          "value": {
+            "id": "v_gen1_trades_dont_trust_ai_3",
+            "type": "variant",
+            "group": "trades",
+            "generation": 1,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "The 24/7 receptionist built for the trades.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen0_trades"
+            ],
+            "genes": {
+              "headline": "The 24/7 receptionist built for the trades.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Catches emergency calls",
+                "Books the job while you work",
+                "Made for the field"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 149.0,
+              "vertical_focus": "trades",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1",
+          "value": {
+            "id": "v_gen1_hvac_dont_trust_ai_1",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 1,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_trades_not_for_my_business_2",
+          "value": {
+            "id": "v_gen1_trades_not_for_my_business_2",
+            "type": "variant",
+            "group": "trades",
+            "generation": 1,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Catch every emergency call. Flat $199, unlimited.",
+            "preview": "For plumbers, electricians, and HVAC who can't stop to answer.",
+            "parents": [
+              "v_gen0_trades"
+            ],
+            "genes": {
+              "headline": "Catch every emergency call. Flat $199, unlimited.",
+              "subhead": "For plumbers, electricians, and HVAC who can't stop to answer.",
+              "bullets": [
+                "Catches emergency calls",
+                "Books the job while you work",
+                "Made for the field"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 149.0,
+              "vertical_focus": "trades",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/hud/cache_hits",
+          "value": 18
+        },
+        {
+          "op": "replace",
+          "path": "/hud/calls_made",
+          "value": 180
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Generation 1: children scored and island leaderboard re-ranked."
+        },
+        {
+          "op": "replace",
+          "path": "/islands/hvac/intent_best",
+          "value": 0.6859
+        },
+        {
+          "op": "replace",
+          "path": "/islands/propmgmt/intent_best",
+          "value": 0.5027
+        },
+        {
+          "op": "replace",
+          "path": "/islands/trades/intent_best",
+          "value": 0.6875
+        },
+        {
+          "op": "replace",
+          "path": "/islands/realestate/intent_best",
+          "value": 0.4928
+        },
+        {
+          "op": "replace",
+          "path": "/islands/finance/intent_best",
+          "value": 0.1726
+        },
+        {
+          "op": "remove",
+          "path": "/active_tools/0"
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "reacting"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1/fitness",
+          "value": 0.4497
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_dont_trust_ai_1/fitness_detail",
+          "value": {
+            "overall_intent": 0.4497,
+            "by_segment": {
+              "trades": {
+                "intent": 0.6875,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 145.9
+              },
+              "hvac": {
+                "intent": 0.6859,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 170.45
+              },
+              "propmgmt": {
+                "intent": 0.5027,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 110.19
+              },
+              "law": {
+                "intent": 0.157,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 72.19
+              },
+              "realestate": {
+                "intent": 0.4928,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 93.55
+              },
+              "finance": {
+                "intent": 0.1726,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 18.21
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_trades_not_for_my_business_2/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_not_for_my_business_2/fitness",
+          "value": 0.3543
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_not_for_my_business_2/fitness_detail",
+          "value": {
+            "overall_intent": 0.3543,
+            "by_segment": {
+              "trades": {
+                "intent": 0.5694,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 121.17
+              },
+              "hvac": {
+                "intent": 0.5579,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 141.01
+              },
+              "propmgmt": {
+                "intent": 0.3798,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 86.41
+              },
+              "law": {
+                "intent": 0.1506,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 69.81
+              },
+              "realestate": {
+                "intent": 0.3847,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 74.69
+              },
+              "finance": {
+                "intent": 0.0835,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 9.6
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen1_trades_dont_trust_ai_3/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_dont_trust_ai_3/fitness",
+          "value": 0.3619
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_dont_trust_ai_3/fitness_detail",
+          "value": {
+            "overall_intent": 0.3619,
+            "by_segment": {
+              "trades": {
+                "intent": 0.6264,
+                "value": 0.8534,
+                "readiness": 0.7305,
+                "wtp": 133.17
+              },
+              "hvac": {
+                "intent": 0.5541,
+                "value": 0.7897,
+                "readiness": 0.7442,
+                "wtp": 137.25
+              },
+              "propmgmt": {
+                "intent": 0.3792,
+                "value": 0.7801,
+                "readiness": 0.709,
+                "wtp": 87.53
+              },
+              "law": {
+                "intent": 0.1621,
+                "value": 0.9138,
+                "readiness": 0.1816,
+                "wtp": 71.1
+              },
+              "realestate": {
+                "intent": 0.3945,
+                "value": 0.7954,
+                "readiness": 0.5495,
+                "wtp": 77.46
+              },
+              "finance": {
+                "intent": 0.0549,
+                "value": 0.6939,
+                "readiness": 0.2589,
+                "wtp": 6.64
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/3",
+          "value": {
+            "actor": "Conductor",
+            "action": "Hand off to Designer for generation 2 after trades leads."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Conductor: doubling down on trades; spawning directed mutations from objections."
+        },
+        {
+          "op": "replace",
+          "path": "/generation",
+          "value": 2
+        },
+        {
+          "op": "add",
+          "path": "/edges/5",
+          "value": {
+            "source": "v_gen1_hvac_dont_trust_ai_1",
+            "target": "v_gen2_trades_unclear_value_0",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/6",
+          "value": {
+            "source": "v_gen1_hvac_dont_trust_ai_1",
+            "target": "v_gen2_trades_dont_trust_ai_1",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/7",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen2_hvac_unclear_value_2",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/8",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen2_hvac_dont_trust_ai_3",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "evolving"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_trades_dont_trust_ai_1",
+          "value": {
+            "id": "v_gen2_trades_dont_trust_ai_1",
+            "type": "variant",
+            "group": "trades",
+            "generation": 2,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen1_hvac_dont_trust_ai_1"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_hvac_dont_trust_ai_3",
+          "value": {
+            "id": "v_gen2_hvac_dont_trust_ai_3",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 2,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_trades_unclear_value_0",
+          "value": {
+            "id": "v_gen2_trades_unclear_value_0",
+            "type": "variant",
+            "group": "trades",
+            "generation": 2,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen1_hvac_dont_trust_ai_1"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_hvac_unclear_value_2",
+          "value": {
+            "id": "v_gen2_hvac_unclear_value_2",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 2,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A receptionist so natural your callers won't know it's AI.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A receptionist so natural your callers won't know it's AI.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_control/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_trades/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_priceled/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_premium/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen0_lossframe/status",
+          "value": "dead"
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/hud/cache_hits",
+          "value": 90
+        },
+        {
+          "op": "replace",
+          "path": "/hud/calls_made",
+          "value": 252
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Generation 2: children scored and island leaderboard re-ranked."
+        },
+        {
+          "op": "replace",
+          "path": "/islands/law/intent_best",
+          "value": 0.1641
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "reacting"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_trades_dont_trust_ai_1/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_trades_dont_trust_ai_1/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_hvac_dont_trust_ai_3/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_dont_trust_ai_3/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_dont_trust_ai_3/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_dont_trust_ai_3/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_hvac_unclear_value_2/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_unclear_value_2/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_unclear_value_2/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_hvac_unclear_value_2/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen2_trades_unclear_value_0/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen2_trades_unclear_value_0/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/4",
+          "value": {
+            "actor": "Facilitator",
+            "action": "Cluster independent reactions into cap, trust, and vertical-fit objections."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Facilitator: Kevin flags the cap-out risk; skeptics cluster around price, trust, and vertical fit."
+        },
+        {
+          "op": "add",
+          "path": "/active_tools/0",
+          "value": "OpenAI"
+        },
+        {
+          "op": "add",
+          "path": "/edges/9",
+          "value": {
+            "source": "trades",
+            "target": "v_gen1_hvac_dont_trust_ai_1",
+            "kind": "objection",
+            "label": "caps_too_low",
+            "ttl_ms": 2800
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "deliberating"
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/5",
+          "value": {
+            "actor": "Conductor",
+            "action": "Hand off to Designer for generation 3 after trades leads."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Conductor: doubling down on trades; spawning directed mutations from objections."
+        },
+        {
+          "op": "replace",
+          "path": "/generation",
+          "value": 3
+        },
+        {
+          "op": "add",
+          "path": "/edges/10",
+          "value": {
+            "source": "v_gen1_hvac_dont_trust_ai_1",
+            "target": "v_gen3_trades_unclear_value_0",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/11",
+          "value": {
+            "source": "v_gen1_hvac_dont_trust_ai_1",
+            "target": "v_gen3_trades_dont_trust_ai_1",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/12",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen3_hvac_unclear_value_2",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/edges/13",
+          "value": {
+            "source": "v_gen0_voicetrust",
+            "target": "v_gen3_hvac_dont_trust_ai_3",
+            "kind": "lineage"
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "evolving"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_trades_unclear_value_0",
+          "value": {
+            "id": "v_gen3_trades_unclear_value_0",
+            "type": "variant",
+            "group": "trades",
+            "generation": 3,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen1_hvac_dont_trust_ai_1"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_trades_dont_trust_ai_1",
+          "value": {
+            "id": "v_gen3_trades_dont_trust_ai_1",
+            "type": "variant",
+            "group": "trades",
+            "generation": 3,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen1_hvac_dont_trust_ai_1"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "trades",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_hvac_dont_trust_ai_3",
+          "value": {
+            "id": "v_gen3_hvac_dont_trust_ai_3",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 3,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A natural receptionist with clear handoff rules and human backup when needed.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A natural receptionist with clear handoff rules and human backup when needed.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_hvac_unclear_value_2",
+          "value": {
+            "id": "v_gen3_hvac_unclear_value_2",
+            "type": "variant",
+            "group": "hvac",
+            "generation": 3,
+            "fitness": 0.0,
+            "status": "alive",
+            "label": "Sounds human. Books the job before you're off the roof.",
+            "preview": "A receptionist so natural your callers won't know it's AI.",
+            "parents": [
+              "v_gen0_voicetrust"
+            ],
+            "genes": {
+              "headline": "Sounds human. Books the job before you're off the roof.",
+              "subhead": "A receptionist so natural your callers won't know it's AI.",
+              "bullets": [
+                "Natural voice",
+                "Instant booking",
+                "Sounds like your best front-desk hire"
+              ],
+              "price_model": "flat",
+              "price_point_usd": 129.0,
+              "vertical_focus": "all",
+              "frame": "gain",
+              "proof": "testimonial"
+            },
+            "is_control": false,
+            "niche": "hvac",
+            "fitness_detail": null
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_hvac_unclear_value_0/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_not_for_my_business_2/status",
+          "value": "dead"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen1_trades_dont_trust_ai_3/status",
+          "value": "dead"
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "replace",
+          "path": "/hud/cache_hits",
+          "value": 162
+        },
+        {
+          "op": "replace",
+          "path": "/hud/calls_made",
+          "value": 324
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Generation 3: children scored and island leaderboard re-ranked."
+        },
+        {
+          "op": "remove",
+          "path": "/active_tools/0"
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "reacting"
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_hvac_dont_trust_ai_3/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_dont_trust_ai_3/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_dont_trust_ai_3/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_dont_trust_ai_3/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_trades_dont_trust_ai_1/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_trades_dont_trust_ai_1/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_hvac_unclear_value_2/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_unclear_value_2/niche",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_unclear_value_2/group",
+          "value": "trades"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_hvac_unclear_value_2/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        },
+        {
+          "op": "add",
+          "path": "/nodes/v_gen3_trades_unclear_value_0/weave_url",
+          "value": "https://wandb.ai/asggm03-startup/crucible/weave"
+        },
+        {
+          "op": "replace",
+          "path": "/nodes/v_gen3_trades_unclear_value_0/fitness_detail",
+          "value": {
+            "overall_intent": 0.0,
+            "by_segment": {
+              "trades": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "hvac": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "propmgmt": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "law": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "realestate": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              },
+              "finance": {
+                "intent": 0.0,
+                "value": 0.0,
+                "readiness": 0.0,
+                "wtp": 0.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event": "STATE_DELTA",
+    "data": {
+      "delta": [
+        {
+          "op": "add",
+          "path": "/orchestration_events/6",
+          "value": {
+            "actor": "Synthesizer",
+            "action": "Render wedge, variant diff, generality check, and Monday validation test."
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/hud/wedge",
+          "value": {
+            "group": "trades",
+            "variant_id": "v_gen1_hvac_dont_trust_ai_1",
+            "value": 0.8534,
+            "readiness": 0.7305,
+            "confidence": 0.78
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/narration",
+          "value": "Synthesizer: the wedge is trades/HVAC, with law flagged as high-value but gated."
+        },
+        {
+          "op": "add",
+          "path": "/active_tools/0",
+          "value": "CopilotKit"
+        },
+        {
+          "op": "add",
+          "path": "/active_tools/3",
+          "value": "OpenAI"
+        },
+        {
+          "op": "replace",
+          "path": "/phase",
+          "value": "converged"
+        },
+        {
+          "op": "replace",
+          "path": "/report",
+          "value": {
+            "title": "Wedge found: trades + HVAC beachhead",
+            "wedge_group": "trades",
+            "summary": "Law firms score highest on raw value, but they are trust- and compliance-gated. The winnable entry point is trades/HVAC: high missed-call stakes, high AI readiness, and owners who physically cannot answer while working.",
+            "segment_verdict": [
+              {
+                "segment": "Trades / HVAC",
+                "verdict": "Beachhead. High value and high readiness."
+              },
+              {
+                "segment": "Law",
+                "verdict": "High value, gated. Revisit after a human-touch story."
+              },
+              {
+                "segment": "Real estate / property management",
+                "verdict": "Secondary. Moderate fit."
+              },
+              {
+                "segment": "Finance",
+                "verdict": "Deprioritize. Low urgency and low readiness."
+              }
+            ],
+            "diff": [
+              {
+                "field": "Headline",
+                "before": "Never miss a call again.",
+                "after": "Sounds human. Books the job before you're off the roof."
+              },
+              {
+                "field": "Price",
+                "before": "24.95 per_call",
+                "after": "129.0 flat"
+              },
+              {
+                "field": "Focus",
+                "before": "all",
+                "after": "all"
+              },
+              {
+                "field": "Frame",
+                "before": "gain",
+                "after": "gain"
+              }
+            ],
+            "test": {
+              "name": "Monday validation test",
+              "instruction": "Send 25 cold DMs to independent trades/HVAC operators with the new page.",
+              "bar": "Pass if more than 40% reply-to-demo. Fail fast below 20%.",
+              "cost": "$20-50 and one afternoon"
+            },
+            "generality": {
+              "product": "QueueHero",
+              "one_liner": "AI waitlist and cancellation recovery for appointment businesses",
+              "method": "Same committed factor-model weights; cached product #2 sanity run.",
+              "winner": {
+                "segment": "dental",
+                "variant": "Backfill canceled tables without another host.",
+                "intent": 0.718
+              },
+              "runner_up": {
+                "segment": "medspa",
+                "intent": 0.596
+              },
+              "gated_segment": "therapy",
+              "takeaway": "The same priors surface dental/medspa appointment recovery, not trades/HVAC, which helps answer the 'was Upfirst authored?' objection."
+            },
+            "integrity": {
+              "framing": "Directional hypothesis engine, not ground truth.",
+              "fallback": "Replay is labeled as replay; Live Anchor is the bounded real-time truth check.",
+              "lead_claim": "Best Use of CopilotKit: graph bound to agent state plus live steering."
+            }
+          }
+        }
+      ]
+    }
+  }
+]
